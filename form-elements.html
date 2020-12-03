@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Form elements</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<form action="#">
+
+<div class="buttons">
+
+  <h1>Buttons</h1>
+
+  <fieldset>
+    <legend>Select a button</legend>
+
+    <div id="draggable-buttons" class="draggable">
+      <span>
+        <button class="ui-button ui-widget ui-corner-all" value="Button element">Button element</button>
+      </span>
+      <a class="ui-button ui-widget ui-corner-all" href="#" value="Anchor button">Anchor</a>
+      <input class="ui-button ui-widget ui-corner-all" type="submit" value="Submit" />
+    </div>
+    
+  </fieldset>
+
+</div>
+
+<div class="menus">
+
+  <h1>Select menus</h1>
+  
+    <fieldset>
+
+      <legend>Menus</legend>
+
+      <div id="draggable-menus" class="draggable v-center">
+  
+        <label for="speed">
+          <select name="speed" id="speed">
+            <option>Slower</option>
+            <option>Slow</option>
+            <option selected="selected">Medium</option>
+            <option>Fast</option>
+            <option>Faster</option>
+          </select>
+        </label>
+
+        <label for="files">
+          <select name="files" id="files">
+            <optgroup label="Scripts">
+              <option value="jquery">jQuery.js</option>
+              <option value="jqueryui">ui.jQuery.js</option>
+            </optgroup>
+            <optgroup label="Other files">
+              <option value="somefile">Some unknown file</option>
+              <option value="someotherfile">Some other file with a very long option text</option>
+            </optgroup>
+          </select>
+        </label>
+    
+        <label for="number">
+          <select name="number" id="number">
+            <option>1</option>
+            <option selected="selected">2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+
+        <label for="salutation">
+          <select name="salutation" id="salutation">
+            <option disabled selected>Please pick one</option>
+            <option>Mr.</option>
+            <option>Mrs.</option>
+            <option>Dr.</option>
+            <option>Prof.</option>
+            <option>Other</option>
+          </select>
+        </label>
+        
+      </div>
+
+    </fieldset>
+
+</div>
+
+<div class="checkboxes-radios">
+  <h1>Checkbox and radio buttons</h1>
+ 
+  <h2>Radio Group</h2>
+  <fieldset>
+    <legend>Select a Location: </legend>
+    <div id="draggable-radios" class="draggable">
+      <label for="radio-1">New York</label>
+      <input type="radio" name="radio-1" id="radio-1" value="New York">
+      <label for="radio-2">Paris</label>
+      <input type="radio" name="radio-1" id="radio-2" value="Paris">
+      <label for="radio-3">London</label>
+      <input type="radio" name="radio-1" id="radio-3" value="London">
+    </div>
+  </fieldset>
+ 
+  <h2>Checkbox</h2>
+  <fieldset>
+    <legend>Hotel Ratings: </legend>
+    <div id="draggable-checkboxes" class="draggable h-center">
+      <label for="checkbox-1">1 Star</label>
+      <input type="checkbox" name="checkbox-1" id="checkbox-1" value="1">
+      <label for="checkbox-2">2 Star</label>
+      <input type="checkbox" name="checkbox-2" id="checkbox-2" value="2">
+      <label for="checkbox-3">3 Star</label>
+      <input type="checkbox" name="checkbox-3" id="checkbox-3" value="3">
+      <label for="checkbox-4">4 Star</label>
+      <input type="checkbox" name="checkbox-4" id="checkbox-4" value="4">
+      <label for="checkbox-5">5 Star</label>
+      <input type="checkbox" name="checkbox-5" id="checkbox-5" value="5">
+    </div>
+  </fieldset>
+ 
+  <h2>Checkbox nested in label</h2>
+  <fieldset>
+    <legend>Bed Type: </legend>
+    <div id="draggable-checkboxes-nested" class="draggable v-center">
+      <label for="checkbox-nested-1">2 Double
+        <input type="checkbox" name="checkbox-nested-1" id="checkbox-nested-1" value="2 Double">
+      </label>
+      <label for="checkbox-nested-2">2 Queen
+        <input type="checkbox" name="checkbox-nested-2" id="checkbox-nested-2" value="2 Queen">
+      </label>
+      <label for="checkbox-nested-3">1 Queen
+        <input type="checkbox" name="checkbox-nested-3" id="checkbox-nested-3" value="1 Queen">
+      </label>
+      <label for="checkbox-nested-4">1 King
+        <input type="checkbox" name="checkbox-nested-4" id="checkbox-nested-4" value="1 King">
+      </label>
+    </div>
+  </fieldset>
+</div>
+ 
+</form>
+ 
+</body>
+</html>
